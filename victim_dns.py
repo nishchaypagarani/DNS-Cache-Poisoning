@@ -12,7 +12,7 @@ from datetime import datetime
 
 
 
-mongo_client = MongoClient("mongodb://localhost:27017/")
+mongo_client = MongoClient("mongodb://localhost:27017/") #CONFIGURE to the mongodb database being used
 
 mongo_db = mongo_client.victim_dns
 mongo_db.dns_records.create_index("date", expireAfterSeconds=120)
